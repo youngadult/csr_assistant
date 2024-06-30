@@ -1,0 +1,11 @@
+.main_chatscreen {
+  flex-grow: 1;
+  background-color: #f4f3f8;
+  padding: 15px 20px;
+  border-radius: 10px;
+  display: flex;
+}
+
+.blur {
+  filter: blur(4px);
+}

@@ -1,0 +1,203 @@
+.main__userprofile {
+  width: 20%;
+  padding: 0 20px 0 40px;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 1024px) and (max-height: 1310px) {
+  .main__userprofile {
+    width: 20%;
+    padding: 0 0px 0 0px;
+    margin-left: 40px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+  }
+}
+.profile__card {
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.profile__card.user__profile__image {
+  padding: 10px 10px;
+}
+.profile__card .profile__image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+@media screen and (min-width: 1024px) and (max-height: 1310px){
+  .profile__card .profile__image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}
+.profile__card .profile__image img {
+  object-fit: cover;
+  max-width: 100%;
+}
+.profile__card h4 {
+  margin-bottom: 0;
+}
+.profile__card p {
+  margin-top: 10px;
+  font-size: 14px;
+  /* color: #acb3b9; */
+}
+.profile__card .card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px 20px;
+}
+.profile__card .card__header h4 {
+  margin: 0;
+}
+.profile__card .card__header i {
+  font-size: 20px;
+}
+.card__content {
+  border-top: 1px solid #ebe7fb;
+  overflow: auto;
+  width: 100%;
+  padding: 5px 15px;
+  color: #6d6a6a;
+  font-size: 14px;
+  word-wrap: break-word;
+  /* display: none; */
+}
+.profile__card.open .card__content {
+  display: block;
+}
+.profile__card.open .card__header i:before {
+  content: "\f106";
+}
+.movie-list {
+  list-style: none;
+  padding: 0;
+}
+
+.movie-list li {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Add some hover effect */
+.movie-list li:hover {
+  color: #ff6347; /* Or any other color you prefer */
+  cursor: pointer;
+}
+/* .user__profile__image,
+.content_bg,
+.card__header,
+.card__content {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.user__profile__image.show,
+.card__header.show,
+.card__content.show {
+  opacity: 1;
+} */
+.card__content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+
+.card__content ul li {
+  margin-bottom: 5px;
+}
+.user_data {
+  animation: fadeIn 2s;
+}
+
+.card__content,.content_data .card__header {
+  animation: fadeIn 2s; /* removed space between '2' and 's' */
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.proceed-button {
+  text-align: center;
+}
+
+.proceed-button button {
+  background-color: #e1f1f0;;
+  color: grey;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease; 
+}
+
+.end-button button {
+  background-color: #e1f1f0;
+  color: grey;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  /* transition: background-color 0.3s ease; */
+}
+
+.end-button button:hover {
+  background-color: #c5e5e3;
+  color: #333;
+}
+.end-button {
+  margin-left: 100px;
+}
+
+.proceed-button button:hover {
+  background-color: #e0e0e0;
+}
+
+.textArea{
+  /* position: absolute;
+  bottom: 10; */
+  margin-top: 340px;
+}
+
+.card__content {
+  position: relative;
+}
+
+#copyButton {
+  padding: 10px 20px;
+  background-color: #0447BF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Red Hat Display", sans-serif;;
+  font-weight: 700;
+  margin-left: 100px;
+}
+
+#copyButton:hover {
+  background-color: #0056b3;
+}
+.paymentText {
+ color: #6d6a6a;
+}

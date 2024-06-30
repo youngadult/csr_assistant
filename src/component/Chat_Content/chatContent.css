@@ -1,0 +1,199 @@
+.main__chatcontent {
+  padding: 0px 40px;
+  max-width: 63%;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  border-right: 1px solid #ebe7fb;
+  width: 100%;
+}
+.content__header {
+  /* padding-bottom: 15px;
+    border-bottom: 1px solid #ebe7fb; */
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff; /* Background color for the bubble */
+  border-radius: 10px; /* Adjust the border radius to control the roundness of the bubble */
+  padding: 10px 15px; /* Add padding to give space inside the bubble */
+}
+.current-chatting-user {
+  display: flex;
+  align-items: center;
+}
+
+.current-chatting-user p {
+  margin: 0;
+  font-weight: 600;
+}
+.content__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.settings .btn-nobg {
+  color: grey;
+}
+
+.content__body {
+  max-height: calc(100vh - calc(100vh / 2));
+  overflow: auto;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.chat__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+.chat__item .avatar {
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 1px;
+}
+.chat__item__content {
+  background-color: #4462ff;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px 10px 10px 10px;
+  max-width: 50%;
+  min-width: 215px;
+}
+.chat__item.other {
+  flex-direction: row-reverse;
+  transform-origin: left;
+  padding: 10px;
+}
+.chat__item.other .chat__item__content {
+  background-color: #fff;
+  color: #2f4f4f;
+  border-radius: 10px 10px 10px 0;
+  max-width: 50%;
+}
+
+.content__footer {
+  padding-top: 30px;
+  padding: 10px 15px;
+}
+/* .sendNewMessage {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 8px;
+}
+.sendNewMessage input {
+  flex-grow: 1;
+  padding: 0 15px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+} */
+
+.sendNewMessage {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px; 
+  border-radius: 8px;
+  height: 180px; 
+  
+  align-items: flex-end;
+}
+
+.sendNewMessage .inputFont {
+  flex-grow: 1;
+  /* padding: 15px;  */
+  background-color: transparent;
+  border: none;
+  outline: none;
+  resize: none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  height: 100%; 
+  color: #2f4f4f;
+}
+.content__footer {
+  margin-top: auto; /* Push the footer to the bottom */
+}
+#sendMsgBtn {
+  background-color: #3b5bfe;
+  color: #fff;
+}
+.sendNewMessage button {
+  width: 36px;
+  height: 36px;
+  background-color: #ecefff;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #4665ff;
+  padding: 0;
+  border-radius: 5px;
+  line-height: 36px;
+}
+.sendNewMessage button i {
+  display: block;
+}
+.inputFont {
+  font-family: "Red Hat Display", sans-serif;
+  height: auto;
+}
+.typing-indicator {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.typing-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #4462ff;
+  border-radius: 50%;
+  margin-right: 5px;
+  animation: typing-dot-animation 0.8s infinite alternate;
+}
+
+@keyframes typing-dot-animation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+.connected-user-text {
+  width: 20.5%;
+  margin-top: 10px;
+  align-self: center;
+  background: linear-gradient(135deg, #4e9eff, #00b2ff);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  padding: 4px 11px;
+  border-radius: 25px;
+  font-size: 13px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.connected-user-text-rating {
+  width: 32%;
+  margin-top: 10px;
+  align-self: center;
+  background: linear-gradient(135deg, #4e9eff, #00b2ff);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  padding: 10px 11px;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.placeholder {
+  color: #999; /* Adjust placeholder color as needed */
+}
+
